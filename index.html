@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .container{
+            display: flex;
+            
+
+        }
+        .left{
+            background-color: aqua;
+            width: 40%;
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            background-color: blueviolet;
+            width: 60%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+            .left{
+                width: 100%;
+                height: 40vh;
+            }
+            .right{
+                width: 100%;
+                height: 60vh;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="right">Right</div>
+    </div>
+</body>
+</html>
